@@ -9,52 +9,66 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-<style>
+    <style>
+        #center {
 
-#center{
+            text-align: center;
+        }
 
-    text-align:center;
-}
+        #mystory {
+            font-size: 200px;
+            text-align: center;
+            border: 10px solid black;
+            padding: 50px;
+            border-style: double;
+            display: inline-block;
 
-#mystory{
-    font-size:200px;
-    text-align:center;
-    border:10px solid black;
-    padding:50px;
-    border-style:double;
-    display:inline-block;
+        }
 
-}
+        #grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 50px;
+        }
 
-#grid{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    margin-top:50px;
-}
+        #grid2 {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            height: 90px;
+        }
 
-#first{
+        #first {
 
-    border-right:10px;
-   
-}
+            border-right: 10px;
 
-
-</style>
+        }
+    </style>
 
 </head>
 
- <body>
+<body>
     <div id="center">
-    <h1 id="mystory"><span>M</span><span>y</span><span> S</span><span>t</span><span>o</span><span>r</span><span>y</span></h1>
+        <h1 id="mystory"><span>M</span><span>y</span><span>
+                S</span><span>t</span><span>o</span><span>r</span><span>y</span></h1>
+
     </div>
-    
     <form action="https://www.google.com/search" method"GET">
-        <div class="search-bar mx-auto mt-5 input-group mb-3">
-            <input name="q" type="text" class="form-control rounded-pill" placeholder="Ask about Songer" aria-label="Recipient's username" aria-describedby="button-addon2">
-          </div>
+        <div id="grid2">
+            <div class="search-bar mx-auto mt-5 input-group mb-3">
+                <input name="q" type="text" class="form-control rounded-pill" placeholder="Ask about Songer"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+            </div>
+
+            <div id="music" class="mt-5">
+                <audio controls>
+                    <source src="My Story.mp3" type="audio/mpeg">
+
+                </audio>
+            </div>
+        </div>
     </form>
 
-    
+
     <!-- <div id="grid">
         <div id="first">
             <img src="bes.jpg" class="a" id="aa">
@@ -73,40 +87,42 @@
 
     <div id="grid">
 
-    <div style="text-align:center">
-        <img src="be.jpg">
-    
+        <div style="text-align:center">
+            <img src="be.jpg">
+
         </div>
 
-    <div class="wrapper swingimage">
-        <div class="picture">
-          <div class="hook"></div>
-          <div class="frame">
-            <div class="inside"></div>
-          </div>
-        </div>
-        
-      </div>
+        <div class="wrapper swingimage">
+            <div class="picture">
+                <div class="hook"></div>
+                <div class="frame">
+                    <div class="inside"></div>
+                </div>
+            </div>
 
-      <div style="text-align:right">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SyIMIr8xj48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div style="text-align:right">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SyIMIr8xj48" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/5f51affff0e7167d000d5336/default';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5f51affff0e7167d000d5336/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
     </script>
     <!--End of Tawk.to Script-->
-        
+
 </body>
 
 
