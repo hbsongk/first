@@ -42,25 +42,52 @@
             border-right: 10px;
 
         }
+
+        @media(max-width:1100px) {
+
+            #mystory {
+                font-size: 150px;
+            }
+        }
+
+        @media(max-width:880px) {
+
+            #grid{
+                display:block;
+            }
+
+            #browneyes{
+                display:none;
+            }
+
+            iframe{
+                display:none;
+            }
+        }
+
+                    
+
     </style>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178008220-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178008220-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'UA-178008220-1');
-  
-</script>
+        gtag('config', 'UA-178008220-1');
+
+    </script>
 
 </head>
 
 <body>
     <div id="center">
-        <a href="diary.html"><h1 id="mystory"><span>M</span><span>y</span><span>
-                S</span><span>t</span><span>o</span><span>r</span><span>y</span></h1></a>
+        <a href="diary.html">
+            <h1 id="mystory"><span>M</span><span>y</span><span>
+                    S</span><span>t</span><span>o</span><span>r</span><span>y</span></h1>
+        </a>
 
     </div>
     <form action="https://www.google.com/search" method"GET">
@@ -98,8 +125,8 @@
 
     <div id="grid">
 
-        <div style="text-align:center">
-            <img src="be.jpg"/>
+        <div style="text-align:center" id="browneyes">
+            <img src="be.jpg" />
         </div>
 
         <div class="wrapper swingimage">
